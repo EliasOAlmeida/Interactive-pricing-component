@@ -47,16 +47,16 @@
 .conteudo {
     margin-top: 10px;
     background: #fff;
-    border-radius: 12px;
+    border-radius: 12px 12px 12px 12px;
     box-shadow:  hsl(223, 50%, 87%) 1px 2px 9px;
 }
 
-.conteudo-title {
+.conteudo-body {
     padding: 35px 0px 20px 0px;
     margin: 0px 18.5px;
 }
 
-.conteudo-title p {
+.conteudo-body p {
     font-size: 12px;
     color: hsl(225, 20%, 60%);
 }
@@ -81,7 +81,7 @@
     margin-top: 10px;
     padding: 0px;
     margin-top: 15.5px;
-    color: hsl(225, 20%, 60%);;
+    color: hsl(225, 20%, 60%);
 }
 
 .conteudo-options {
@@ -110,6 +110,8 @@
     appearance: none;
     width: 38px;
     height: 38px;
+    margin-top: 1px;
+    margin-left: -1px;
     border-radius: 50%;
     background: url("img/icon-slider.svg") no-repeat center hsl(174, 86%, 45%);
     box-shadow: 0px 5px 25px 0px hsla(174, 91%, 43%, 0.753);
@@ -175,4 +177,58 @@
     box-shadow: 0px 4px 4px rgb( 0 0 0 / 10%);
     background-color: #fff;
     box-shadow: 0px 0.2px 1px 0px #000;
+}
+
+
+.border-top {
+       border-top: 1px solid rgba(0, 0, 0, 0.13);
+       margin-top: 20px;
+       padding: 33px 0px 0px 14.5px;
+}
+
+.list {
+    padding-bottom: 12px;
+}
+
+
+.list > ul > li {
+    list-style: none;
+    font-size: 10px;
+    color: hsl(225, 20%, 60%);
+    padding-bottom: 13px;
+}
+
+.list > ul > li > img {
+    width: 16px;
+    margin-top: -8px;
+}
+
+.btn-primary {
+    width: 140px;
+    height: 30px;
+    
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #293356;
+    color: #BDCCFE;
+    border-radius: 16px;
+    font-size: 13.3333px;
+    border: none;
+    padding: 2px 0px 0px 0px;
+    margin-top: 24px;
+    margin-left: 12px;
+}
+
+.btn-primary:hover {
+    background-color: #293356e3; 
+    color: #afc0fa;
+}
+
+.btn-primary:focus {
+    background-color: #1c233a; 
+    color: #afc0fa;
+}
+
+.footer {
+    padding-top: 11px;
+    font-size: 11px;
 }
