@@ -112,5 +112,67 @@
     height: 38px;
     border-radius: 50%;
     background: url("img/icon-slider.svg") no-repeat center hsl(174, 86%, 45%);
+    box-shadow: 0px 5px 25px 0px hsla(174, 91%, 43%, 0.753);
     cursor: pointer;
+}
+
+.desconto {
+   margin: 41px 0px 0px 0px;
+   padding-right: 28px;
+}
+
+.desconto > div {
+   margin: 0px 4px 0px 2px;
+ }
+ 
+
+.desconto-vintecinco {
+    background-color: #feece7;
+    color: #ff8c66;
+    padding: 1px 6px;
+    border-radius: 1rem;
+    font-size: 8px;
+}
+
+.toggle {
+    display: none;
+}
+
+.toggle + label {
+    width: 30px;
+    height: 15px;
+    background-color: #cdd7ee;
+    display: block;
+    position: relative;
+    border-radius: 20px;
+    padding: 0px 2px;
+    transition: 200ms;
+    cursor: pointer; 
+} 
+
+.toggle + label::before {
+    content: '';
+    position: absolute;
+    width: 11px;
+    height: 11px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0px 0.2px 1px 0px #000;
+    border-radius: 50%;
+    display: block;
+    right: unset;
+    top: 2px; 
+    transition: 200ms;
+    padding: 0px 3px;
+} 
+
+.toggle:checked + label {
+    background-color: #ff8c6634;
+}
+
+.toggle:checked + label::before {
+    content: '';
+    left: calc( 75% - 5px );
+    box-shadow: 0px 4px 4px rgb( 0 0 0 / 10%);
+    background-color: #fff;
+    box-shadow: 0px 0.2px 1px 0px #000;
 }
